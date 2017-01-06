@@ -70,6 +70,8 @@ class PokemonForm extends Component {
       )
     );
 
+    const errors = this.props.errors;
+
     return (
       <form onSubmit={this.handleSubmit}>
         <label>Name

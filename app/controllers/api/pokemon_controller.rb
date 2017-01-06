@@ -12,7 +12,7 @@ class Api::PokemonController < ApplicationController
     if @pokemon.save
       render :show
     else
-      render :index #FIX THIS LATER!!!
+      render :json => @pokemon.errors.full_messages
     end
   end
 
